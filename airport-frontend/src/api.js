@@ -4,7 +4,6 @@ const API_BASE = "https://airport-management-qjgg.onrender.com/api";
 
 export const api = {
   API_BASE,
-};
 
   // ---------- AUTH ----------
   login: (email, password) =>
