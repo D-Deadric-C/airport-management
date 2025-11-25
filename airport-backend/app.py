@@ -11,6 +11,13 @@ import random
 
 app = Flask(__name__)
 CORS(app)
+@app.route("/")
+def home():
+    return jsonify({
+        "message": "Airport Management API is running ✅",
+        "status": "ok"
+    })
+
 
 # ----------------- OWNER SETTINGS -----------------
 # This is the ONLY email that will become admin.
